@@ -1,8 +1,8 @@
 // progress_bar.cpp : Defines the exported functions for the DLL application.
 //
 
-#include "stdafx.h"
-#include "progress_bar.h"
+
+#include <progress_bar/progress_bar.h>
 
 #include <thread>
 #include <iostream>
