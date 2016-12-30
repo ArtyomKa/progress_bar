@@ -1,13 +1,12 @@
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.2)
 project(progress_bar)
 
 
 file(GLOB_RECURSE SOURCES
-     src *.cpp
-     include/progress_bar *.h)
+     src *.cpp)
 
-#message(${SOURCES})
 
 add_library(progress_bar ${SOURCES})
-include_directories(./include)
-#target_include_directories(progress_bar PUBLIC ./include/progress_bar)
+
+
+target_include_directories(progress_bar PUBLIC ./include)

@@ -16,13 +16,12 @@
 #include <string>
 #include <functional>
 
-
-const int STOP = 1;
+namespace progress_bar {
 
 void PROGRESS_BAR_API run_progress_bar(const std::string &text, std::function<float()> &percentage_function);
 
 void PROGRESS_BAR_API run_busy_animation(const std::string &text, bool &monitor);
 
-
+}
 
 #endif

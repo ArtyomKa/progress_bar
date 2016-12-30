@@ -11,7 +11,8 @@ using std::string;
 
 static const std::string states[4] = {"|", "/", "--", "\\"};
 
-void run_progress_bar(const std::string& text, std::function<float()>& percentage_function)
+
+void progress_bar::run_progress_bar(const std::string &text, std::function<float()> &percentage_function)
 {
 	std::thread* th = new std::thread([&percentage_function, text, th]()
 	{
@@ -26,7 +27,8 @@ void run_progress_bar(const std::string& text, std::function<float()>& percentag
 	});
 }
 
-void run_busy_animation(const std::string &text, bool &monitor)
+
+void progress_bar::run_busy_animation(const std::string &text, bool &monitor)
 {
 	std::thread* th = new std::thread([&monitor, text, th]()
 	{
