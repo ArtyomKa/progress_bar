@@ -1,22 +1,18 @@
 language: cpp
 addons:
-        apt:
-                sources:
-                        # add PPAs with more up-to-date toolchains
-                        - ubuntu-toolchain-r-test
-                                  #         - llvm-toolchain-precise-3.6
-                        packages:
-                                 #                 # install toolchains
-                            #                     - gcc-5
-                                  #                         - g++-5
-                                - clang-3.6
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - clang-3.6
+
 install:
-        - sudo apt-get install -y build-essential cmake
+  - sudo apt-get install -y build-essential cmake
 
 before_script:
-        - mkdir build
-        - cd build
-        - cmake ..
+  - mkdir build
+  - cd build
+  - cmake ..
 script:
-        - make 
+  - make 
 
