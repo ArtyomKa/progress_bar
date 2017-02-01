@@ -1,6 +1,3 @@
-// progress_bar.cpp : Defines the exported functions for the DLL application.
-//
-
 
 #include <progress_bar/progress_bar.h>
 
