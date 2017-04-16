@@ -11,7 +11,7 @@ install:
   - sudo apt-get install -y build-essential cmake
 
 before_script:
-  - echo $TRAVIS_TAG
+  - echo $TRAVIS_TAG $TRAVIS_BRANCH $TRAVIS_REPO_SLUG
   - mkdir build
   - cd build
   - cmake ..

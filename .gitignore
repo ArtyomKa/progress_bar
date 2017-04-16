@@ -312,3 +312,6 @@ build/
 
 # vscode
 .vscode
+GPATH
+GRTAGS
+GTAGS
